@@ -1,4 +1,8 @@
 <?php
+//v adrese musí být ?username= aby bylo možné přihlášení bez zadávání hesla
+if ($_SERVER['REQUEST_URI'] == '/') {
+	header('Location: http://m/?username=');
+}
 
 if (empty($_GET['file'])) {
 	ob_start(function($s) {
@@ -40,7 +44,13 @@ function adminer_object() {
 		new AdminerDumpPhpPrototype,
 	);
 
-	return new AdminerPlugin($plugins);
+	class AdminerCustomization extends AdminerPlugin {
+		function credentials() {
+			//výchozí přihlašovací údaje pro lokální databátzi
+			return array('localhost', 'root', '');
+		}
+	}
+	return new AdminerCustomization($plugins);
 }
 
 include dirname(__FILE__) . '/adminer.php';

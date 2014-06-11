@@ -1,3 +1,14 @@
+MH added:
+===========
+V téhle branchi je navíc přidaný autologin podle https://blog.martinhujer.cz/jak-mam-nastaveny-adminer/
+
+(průběžně rebasuju na upstream/master)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 Adminer Customization
 =====================
 
