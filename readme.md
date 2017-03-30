@@ -4,6 +4,7 @@ V téhle branchi je navíc přidaný autologin podle https://blog.martinhujer.cz
 
 (průběžně rebasuju na upstream/master)
 
+Install as a service: nssm install Adminer c:\devweb\adminer\adminer-server.cmd
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
